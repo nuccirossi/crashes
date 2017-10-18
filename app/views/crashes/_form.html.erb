@@ -1,0 +1,69 @@
+<%= form_for(@crash) do |f| %>
+  <% if @crash.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@crash.errors.count, "error") %> prohibited this crash from being saved:</h2>
+
+      <ul>
+      <% @crash.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :date %><br>
+    <%= f.date_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :time %><br>
+    <%= f.time_select :time %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br>
+    <%= f.text_field :location %>
+  </div>
+  <div class="field">
+    <%= f.label :operator %><br>
+    <%= f.text_field :operator %>
+  </div>
+  <div class="field">
+    <%= f.label :flight %><br>
+    <%= f.text_field :flight %>
+  </div>
+  <div class="field">
+    <%= f.label :route %><br>
+    <%= f.text_field :route %>
+  </div>
+  <div class="field">
+    <%= f.label :type %><br>
+    <%= f.text_field :type %>
+  </div>
+  <div class="field">
+    <%= f.label :registration %><br>
+    <%= f.text_field :registration %>
+  </div>
+  <div class="field">
+    <%= f.label :cn %><br>
+    <%= f.text_field :cn %>
+  </div>
+  <div class="field">
+    <%= f.label :aboard %><br>
+    <%= f.number_field :aboard %>
+  </div>
+  <div class="field">
+    <%= f.label :fatalities %><br>
+    <%= f.number_field :fatalities %>
+  </div>
+  <div class="field">
+    <%= f.label :ground %><br>
+    <%= f.number_field :ground %>
+  </div>
+  <div class="field">
+    <%= f.label :summary %><br>
+    <%= f.text_field :summary %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

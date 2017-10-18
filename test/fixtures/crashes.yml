@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2017-10-18
+  time: 2017-10-18 20:38:35
+  location: MyString
+  operator: MyString
+  flight: MyString
+  route: MyString
+  type: 
+  registration: MyString
+  cn: MyString
+  aboard: 1
+  fatalities: 1
+  ground: 1
+  summary: MyString
+
+two:
+  date: 2017-10-18
+  time: 2017-10-18 20:38:35
+  location: MyString
+  operator: MyString
+  flight: MyString
+  route: MyString
+  type: 
+  registration: MyString
+  cn: MyString
+  aboard: 1
+  fatalities: 1
+  ground: 1
+  summary: MyString

@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @crash.date %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @crash.time %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @crash.location %>
+</p>
+
+<p>
+  <strong>Operator:</strong>
+  <%= @crash.operator %>
+</p>
+
+<p>
+  <strong>Flight:</strong>
+  <%= @crash.flight %>
+</p>
+
+<p>
+  <strong>Route:</strong>
+  <%= @crash.route %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @crash.type %>
+</p>
+
+<p>
+  <strong>Registration:</strong>
+  <%= @crash.registration %>
+</p>
+
+<p>
+  <strong>Cn:</strong>
+  <%= @crash.cn %>
+</p>
+
+<p>
+  <strong>Aboard:</strong>
+  <%= @crash.aboard %>
+</p>
+
+<p>
+  <strong>Fatalities:</strong>
+  <%= @crash.fatalities %>
+</p>
+
+<p>
+  <strong>Ground:</strong>
+  <%= @crash.ground %>
+</p>
+
+<p>
+  <strong>Summary:</strong>
+  <%= @crash.summary %>
+</p>
+
+<%= link_to 'Edit', edit_crash_path(@crash) %> |
+<%= link_to 'Back', crashes_path %>
